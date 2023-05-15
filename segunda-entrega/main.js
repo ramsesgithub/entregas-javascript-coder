@@ -19,9 +19,15 @@ let trueOFalse=tiposDeAnimales.includes(animal);
 //if para validar true o false
 if(trueOFalse===true){
     let nombre=prompt(`Nombre del animal?`);
-    const animal1 = new Animales(animal,nombre);
-    alert(`Tu animal es un : ${animal1.animal} y su nombre es : ${animal1.nombre}`);
-}else{
-    alert("Tu animal no existe, o esta mal escrito. Recuerda escribir sin tindes")
+    //if por si no se ingresa nada en nombre
+    if(nombre===""){
+        const animal1 = new Animales(animal,"desconocido");
+        alert(`Tu animal es un : ${animal1.animal} y su nombre es : ${animal1.nombre}`);
+    }else{
+        const animal1 = new Animales(animal,nombre);
+        alert(`Tu animal es un : ${animal1.animal} y su nombre es : ${animal1.nombre}`);
+    }
 }
+else alert("Tu animal no existe, o esta mal escrito. Recuerda escribir sin tindes")
+
 
