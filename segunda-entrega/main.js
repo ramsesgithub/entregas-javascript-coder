@@ -16,18 +16,20 @@ let animal=prompt(`¿Qué ANIMAL tienes?`).toLowerCase();
 //metodo includes para verificar si se encuentra el animal ingresado
 let trueOFalse=tiposDeAnimales.includes(animal);
 
-//if para validar true o false
-if(trueOFalse===true){
-    let nombre=prompt(`Nombre del animal?`);
-    //if por si no se ingresa nada en nombre
-    if(nombre===""){
-        const animal1 = new Animales(animal,"desconocido");
-        alert(`Tu animal es un : ${animal1.animal} y su nombre es : ${animal1.nombre}`);
-    }else{
-        const animal1 = new Animales(animal,nombre);
-        alert(`Tu animal es un : ${animal1.animal} y su nombre es : ${animal1.nombre}`);
-    }
+
+while(trueOFalse!==true){
+    alert("ese AMINAL NO EXISTE");
+    animal=prompt(`¿Qué ANIMAL tienes?`).toLowerCase();
+    trueOFalse=tiposDeAnimales.includes(animal);
 }
-else alert("Tu animal no existe, o esta mal escrito. Recuerda escribir sin tindes")
 
 
+let nombre=prompt(`¿Cuál es el nombre del animal?`);
+
+if(nombre===""){
+    const animal1 = new Animales(animal,"desconocido");
+    alert(`Tu animal es un : ${animal1.animal} y su nombre es : ${animal1.nombre}`);
+}else{
+    const animal1 = new Animales(animal,nombre);
+    alert(`Tu animal es un : ${animal1.animal} y su nombre es : ${animal1.nombre}`);
+}
