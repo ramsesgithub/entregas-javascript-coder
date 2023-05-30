@@ -70,13 +70,13 @@ const validar= (e,btn) =>{
 let darkMode=localStorage.getItem("dark-mode"); 
 
 const activarDarkMode=()=>{
-    body.classList.add("dark-mode");
+    document.body.classList.add("dark-mode");
     //true dark-moode en localstorage
     localStorage.setItem("dark-mode","activado") 
 }
 
 const desactivarDarkMode=()=>{
-    body.classList.remove("dark-mode");
+    document.body.classList.remove("dark-mode");
     //false dark-moode en localstorage
     localStorage.setItem("dark-mode","desactivado") 
 }
