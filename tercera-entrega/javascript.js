@@ -8,26 +8,29 @@ const pResultado=document.getElementById ("resultado");
 
 const botonDarkMode=document.getElementById("btn-dark-mode");
 
-
+//evento sumar al hacer click
 btnSumar.addEventListener("click",(e)=>{
     validar(e,"sumar");
 });
 
+//evento restar al hacer click
 btnRestar.addEventListener("click",(e)=>{
     validar(e,"restar");
 });
 
+//evento multiplicar al hacer click
 btnMultiplicar.addEventListener("click",(e)=>{
     validar(e,"multiplicar");
 });
 
+//evento dividir al hacer click
 btnDividir.addEventListener("click",(e)=>{
     validar(e,"dividir");
 });
 
 
 
-
+//crear una funcion para validar y hacer determinada operacion
 const validar= (e,btn) =>{
     e.preventDefault(); //evitar que recargue el form
 

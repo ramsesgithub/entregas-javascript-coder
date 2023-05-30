@@ -6,7 +6,6 @@
 }
 
 body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #ffffff;
     margin-top: 50px;   
     display: flex;
@@ -18,6 +17,7 @@ body{
 h1{
     margin: 20px 0;
     text-align: center;
+    font-size: 40px;
 }
 
 
@@ -89,9 +89,6 @@ h1{
     color: #f00;
 }
 
-#calcular{
-    cursor: pointer;
-}
 p{
     padding-top: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
