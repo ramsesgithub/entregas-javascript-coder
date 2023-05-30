@@ -10,13 +10,19 @@
 </head>
 <body>
     <button id="btn-dark-mode">Dark Mode</button>
-    <h1>Calculadora</h1>
-    <form class="form"> 
-        <input type="text" id="op1" placeholder="Numero 1">
-        <input type="text" id="operacion" placeholder="Operacion +, -, *, /">
-        <input type="text" id="op2" placeholder="Numero 2">
-        <input type="submit" value="Calcular" id="calcular">
+    <form class="container"> 
+        <div class="numeros">
+            <input type="text" id="op1" placeholder="Numero 1">
+            <input type="text" id="op2" placeholder="Numero 2">
+        </div>
+        <div class="operaciones">
+            <button id="sumar">sumar</button>
+            <button id="restar">restar</button>
+            <button id="multiplicar">multiplicar</button>
+            <button id="dividir">dividir</button>
+        </div>
     </form> 
+    <h1>Calculadora JavaScript</h1>
     <div id="resultado"></div>
     <script src="./javascript.js"></script>
 </body>

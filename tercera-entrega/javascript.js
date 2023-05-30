@@ -1,45 +1,67 @@
 //accediento al elemento via id
-const txtOp1=document.getElementById ("op1");
-const txtoperacion=document.getElementById ("operacion");
-const txtOp2=document.getElementById ("op2");
-const btnCalcular=document.getElementById ("calcular");
+const btnSumar=document.getElementById("sumar");
+const btnRestar=document.getElementById("restar");
+const btnMultiplicar=document.getElementById("multiplicar");
+const btnDividir=document.getElementById("dividir");
+
 const pResultado=document.getElementById ("resultado");
 
 const botonDarkMode=document.getElementById("btn-dark-mode");
-const body=document.body;
 
-//cada vez que se haga click ejecuta la funcion
-btnCalcular.addEventListener("click", calcular)
 
-//Funcion cada vez a apretamos el submit
-function calcular(e){
-    //evitar que el form se "envie" o recargue
-    e.preventDefault();
+btnSumar.addEventListener("click",(e)=>{
+    validar(e,"sumar");
+});
 
-    const operacion=txtoperacion.value; //guardamos el valor  en una variable
-    const op1=parseFloat(txtOp1.value);  //guardamos el valor en una variable y lo pasamos a float
-    const op2=parseFloat(txtOp2.value);  //guardamos el valor en una variable y lo pasamos a float
+btnRestar.addEventListener("click",(e)=>{
+    validar(e,"restar");
+});
 
-    if (operacion == "+" || operacion=="-" || operacion=="*" || operacion =="/"){
-        let res=0;
-        switch (operacion){
-            case "+":
-                res=op1+op2
+btnMultiplicar.addEventListener("click",(e)=>{
+    validar(e,"multiplicar");
+});
+
+btnDividir.addEventListener("click",(e)=>{
+    validar(e,"dividir");
+});
+
+
+
+
+const validar= (e,btn) =>{
+    e.preventDefault(); //evitar que recargue el form
+
+    //valor del numero1 y numero2
+    const op1 = document.getElementById('op1').value;
+    const op2 = document.getElementById('op2').value;   
+    
+    //validar que se haya ingresado valores
+    if ((op1.length  === 0) || (op2.length === 0)) pResultado.innerHTML= `<p class="red">Debes ingresar dos valores ❌`;
+    else{
+        let res;
+        //usamos switch para que haga una determinada operacion
+        switch (btn){
+            case "sumar":
+                res = parseFloat(op1) + parseFloat(op2); //una vez validado pasarlos a float
                 break;
-            case "-":
-                res=op1-op2
+            case "restar":
+                res = parseFloat(op1) - parseFloat(op2); //una vez validado pasarlos a float
                 break;
-            case "*":
-                res=op1*op2
+            case "multiplicar":
+                res = parseFloat(op1) * parseFloat(op2); //una vez validado pasarlos a float
                 break;
-            case "/":
-                res=op1/op2
+            case "dividir":
+                res = parseFloat(op1) / parseFloat(op2); //una vez validado pasarlos a float
                 break;
-            }
-        if(isNaN(res))pResultado.innerHTML=`<p class="red">La operacion no es posible ❌`
-        else pResultado.innerHTML=`<p>El resultado es: ${res} ✅</p>`
-    }else pResultado.innerHTML=`<p class="red">La operacion no es posible ❌`
-}
+        }
+
+        //validar que se haya ingreasdo solo numeros
+        if (isNaN(res)) pResultado.innerHTML=`<p class="red">La operacion no es posible ❌`;
+        else pResultado.innerHTML=`<p>El resultado es: ${res} ✅</p>`;
+    }
+};
+
+
 
 
 /* Dark Mode con localStorage */

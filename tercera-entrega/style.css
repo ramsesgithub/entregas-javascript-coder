@@ -9,10 +9,14 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #ffffff;
     margin-top: 50px;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h1{
-    margin-bottom: 10px;
+    margin: 20px 0;
     text-align: center;
 }
 
@@ -20,30 +24,61 @@ h1{
 #btn-dark-mode{
     background-color: rgb(0, 0, 0);
     color: #ffffff;
-    width: 150px;
-    height: 30px;
+    width: 170px;
+    height: 57px;
     border: none;
     cursor: pointer;
-    margin: 0 5px;
+    margin: 50px 0;
     border: 1px white solid;
+    font-size: 20px;
 }
 
 
-.form{
+.container{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-.form input{
-    width: 220px;
-    height: 30px;
-    border: 1px solid black;
-    color: rgb(0, 0, 0);
-    transition: 0.5s;
-    outline: none;
+
+.numeros{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
 }
+
+.numeros input{
+    width: 195px;
+    height: 41px;
+    color: #fff;
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    border: .5px solid #fff;
+    text-align: center;
+}
+
+.numeros input::placeholder{
+    color: #ffffffa1;
+    padding: 0 5px;
+}
+
+.operaciones{
+    display: flex;
+    gap: 12px;
+}
+
+.operaciones button{
+    background-color: #1E1E1E;
+    width: 108px;
+    height: 31px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border: .5px solid #fff;
+}
+
 
 #resultado{
     text-align: center;
@@ -65,5 +100,5 @@ p{
 
 .dark-mode{
     background: #000000;
-    color: #e9e91b;
+    color: #ffffff;
 }
