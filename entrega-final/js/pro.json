@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "nombre":"Samsung Galaxy M23",
+        "precio":64000,
+        "img":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQO-sSvawgAIPePZHN4K4vsCPPlRcuJYiiy1D6ID53lCNbIekjcKaC_6SJ4nwMMNiPuBhqWFvbpOQea_LxgOPxqTLGhqNZagDSZUIraTm_e9q8RIydsxqv-&usqp=CAE"
+    },
+    {
+        "id":2,
+        "nombre":"Motorola Edge 30",
+        "precio":92000,
+        "img":"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRh3R5aiMDiYYclpPl1Pu8xmWrhYQHA15k7Rqhq2-Jj7lourvtUz1FUA-SaHCXDWyxV5xvuPTkQYNBmDlxuZ4qdZOyNORgfKDfthubVLiSoIkw0IT-W3KaZ&usqp=CAE"
+    },
+    {
+        "id":3,
+        "nombre":"Samsung Galaxy A54",
+        "precio":55000,
+        "img":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQILM7mrfkUXF3QUUim3dIR_GFXUSrUj5SlBiJgLxEqgAC1F3WnSAI1WBUFmlzeugQ-RQvIgVpo0IhiCzCW4ONx3owS8hzPqCE-s0EqZEVmEnIOuypCWVhP&usqp=CAE"
+    },
+    {
+        "id":4,
+        "nombre":"Redmi Note 11",
+        "precio":76000,
+        "img":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRKPa1J7gTNlFHuB8yjMtJ_TVXGHaSBWnbJVb6wMsVq-xuxdVRxX3BY9sPeLblhzJix6DkfNT7cdrGKMUY4rOmRepTXh1yf-o9jm7XHfBxvSMTwH6O3RJ5LEg&usqp=CAE"
+    },
+    {
+        "id":5,
+        "nombre":"Motorola E32",
+        "precio":81000,
+        "img":"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS_hv--gx8kk481cAu17CpOkyS_I04hlkelNuJrIz1d_c3wq52Dt37_OEudqgSVlzVLZYEv-5TzQRRz3rLgeuOMvKvjrNVcE1OHR9BJDd5vvJ3TK9z_mrkZXw&usqp=CAE"
+    },
+    {
+        "id":6,
+        "nombre":"Motorola E22",
+        "precio":63000,
+        "img":"https://olmoshogar.com.ar/wp-content/uploads/2023/05/CELU-MOTOROLA-E22I-GRIS.jpg"
+    },
+    {
+        "id":7,
+        "nombre":"Samsung Galaxy S20",
+        "precio":52000,
+        "img":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQd4uI5NNn39XOOnrgLWuBnJWIFjA8wGiYzqv9YDL-dtTaa_AnpNUQ9fTeVSjDde1FIKIrz6SdXLEvhGPsx8iE3PLbd0Q_ffQ&usqp=CAE"
+    }
+]

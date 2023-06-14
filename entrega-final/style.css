@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url("https://images.unsplash.com/photo-1605170439002-90845e8c0137?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80");
+}
+
+
+/* Navbar */
+.navbar-container{
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+}
+
+.nav-container{
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
+    background-color: #000000;
+}
+
+.navbar-logo{
+    justify-self: start;
+    margin-left: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ver-carrito{
+    font-size: 35px;
+    margin: 0 4%;
+    cursor: pointer;
+}
+
+
+
+/* Banner styles */
+
+
+.banner-container{
+    margin: 0 4%;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+
+
+/* Content */
+
+.shop-content{
+    border-radius: 20px;
+    background-color: #fffffffb;
+    margin: 2% 8% ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    margin: 40px 0;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content > img{
+    width: 90%;
+}
+
+.content h2{
+    color: #464545;
+    padding: 5px 0;
+}
+
+.content p{
+    color: #000000;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.content button{
+    color: #ffffff;
+    background-color: #000000;
+    font-size: 20px;
+    border: none;
+    width: 320px;
+    height: 50px;
+    margin: 7px 0;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 10px;
+}
+
+.content button:hover{
+    color: #979797fd;
+}
+
+
+/* Modal compra */
+.modal-container{
+    background-color: #ffffff;
+    color: #000000f8;
+    width: 80%;
+    max-height: 85vh;
+    margin: 5px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0 4px 8px #161616b2;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top:12vh;
+    scrollbar-color:none;
+
+    transition: all .3s;
+}
+
+
+.modal-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #929290;
+    color: #fff;
+    width: 100%;
+    height: 60px;
+}
+
+.modal-header-button{
+    cursor: pointer;
+}
+
+.modal-container > .modal-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 50px 0;
+}
+
+.modal-content p{
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+.modal-content h2{
+    color: #646464;
+    font-size: 25px;
+}
+
+.modal-container > div >img{
+    height: 300px;
+    width: 300px;
+}
+
+.total-content{
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.monto-total{
+    color: green;
+}
+
+.delete-product{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
