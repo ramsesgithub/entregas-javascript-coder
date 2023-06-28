@@ -7,9 +7,9 @@ const cantidadCarrito=document.getElementById("cantidadCarrito"); //cantidad de 
 let carrito = JSON.parse(sessionStorage.getItem("carrito")) || [];
 
 //Fetch para traer los productos
-fetch("/js/pro.json")
-.then(respose=>respose.json())
-.then(data=>data.forEach(produc=>{
+fetch("https://my-json-server.typicode.com/ramsesgithub/Api_Prueba/db")
+.then(respose => respose.json())
+.then(data => data.productos.forEach(produc=>{
     //Se crea un div para luego meter los productos
     let content=document.createElement("div");
     content.innerHTML = `
